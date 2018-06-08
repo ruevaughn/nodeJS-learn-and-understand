@@ -3,3 +3,10 @@ function greet() {
 }
 
 greet()
+
+// function are first-class
+function logGreeting(fn) {
+  fn();
+}
+
+logGreeting(greet);
