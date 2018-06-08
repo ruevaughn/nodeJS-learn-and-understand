@@ -1,5 +1,5 @@
 Purely NodeJS Learning
-- This is based on a much older Node 4 version. Wanting to learn progressively. My Node Version at this time - v8.11.2
+- This is based on a much older Node 4 version. Wanting to learn progressively. My Node Version at this time - v8.11.2. So only EcmaScript 2015 is available in this application.
 
 Module:
 A Reusable Block of Code who existence does not accidently impact other code.
