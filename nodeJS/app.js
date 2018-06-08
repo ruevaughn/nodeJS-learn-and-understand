@@ -1,19 +1,27 @@
 function greet() {
-  console.log('hi');
+  return 'hi world';
 }
 
 greet()
 
+function depart() {
+  return "goodbye world.";
+}
+
+depart();
+
 // function are first-class
 function logGreeting(fn) {
-  fn();
+  console.log(fn());
 }
 
 logGreeting(greet);
+logGreeting(depart);
 
 var greetMe = function() {
-  console.log('Ay Tony!');
+  return 'Ay Tony!';
 }
 greetMe()
 
 logGreeting(greetMe);
+
