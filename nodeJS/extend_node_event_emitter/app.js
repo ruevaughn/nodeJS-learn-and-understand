@@ -1,7 +1,14 @@
+// //
+// Use .call() to complete this form of inheritance
+// //
+
 var EventEmitter = require('events');
 var util = require('util');
 
 function Greetr() {
+  // Equivalent to the super() constructor,
+  // this is not an example of that form of inheritance though.
+  EventEmitter.call(this);
   this.greeting = 'Hello World from the Greetr Module!!!';
 }
 
