@@ -7,15 +7,16 @@ function Greetr() {
 
 util.inherits(Greetr, EventEmitter);
 
-Greetr.prototype.greet = function() {
-  console.log(this.greeting);
-  this.emit('greet');
+// Finally addressed passing data.
+Greetr.prototype.greet = function(data) {
+  console.log(this.greeting + ': ' + data);
+  this.emit('greet', data);
 }
 
 var greeter1 = new Greetr();
 
-greeter1.on('greet', function(){
-  console.log("Someone emitted dag yo");
+greeter1.on('greet', function(data){
+  console.log("Someone greeted!: " + data);
 });
 
-greeter1.greet();
+greeter1.greet("Yay my curiosity is put to rest.");
